@@ -23,6 +23,28 @@ Ejemplo:
 
 RamirezFernandezLO_unidadI.tex
 
+## Cómo iniciar
+~~~sh
+git clone https://github.com/opengraphix/plantilla_tareas_LATEX.git
+
+cd plantilla_tareas_LATEX
+~~~
+
+Abrir el archivo PaternoMatenoN_plantillatarea.tex con tu procesador de textos favorito para LaTeX (Atom, Emacs, VIM, Texmate, TexMaker) y guardalo con tus datos.
+
+## Agregar bibliografía
+Las nuevas fuentes bibliográficas se agregan en *biblio/bibliografia.bib*
+
+### Actualizar y compilar la biblografía
+
+Desde la línea de comandos ejecutar las siguientes instrucciones, para habilitarla.
+
+~~~sh
+latex PaternoMatenoN_plantillatarea
+bibtex PaternoMatenoN_plantillatarea
+latex PaternoMatenoN_plantillatarea
+latex PaternoMatenoN_plantillatarea
+~~~
 ## Requerimientos
 ### Windows
 - MiKTeX, [http://miktex.org](http://miktex.org/download)
