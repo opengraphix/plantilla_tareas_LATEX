@@ -1,6 +1,6 @@
-%%% Una plantilla para elaborar trabajo y tareas 
-%%% Luis O. Ramírez Fernández < lramirez88mx@comunidad.unam.mx>
-%%% La vesión más reciente en https://github.com/opengraphix/plantilla_tareas_LATEX
+%%% Una plantilla para elaborar trabajo y tareas
+%%% Luis O. RamÃ­rez FernÃ¡ndez < lramirez88mx@comunidad.unam.mx>
+%%% La vesiÃ³n mÃ¡s reciente en https://github.com/opengraphix/plantilla_tareas_LATEX
 %%%
 %%% ------------------------------------------------------------------------
 %%% Requerimientos:
@@ -37,40 +37,45 @@
 \usepackage{apacite}
 
 %% Esto es para poder escribir acentos directamente:
-\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}
 \usepackage{enumerate}
 
-%% Esto es para que LaTeX sepa que el texto está en español:
+%% Esto es para que LaTeX sepa que el texto estÃ¡ en espaÃ±ol:
 \usepackage[spanish,activeacute]{babel}
 
-%% Para imágenes, tablas y flotantes
-\usepackage{graphicx, float, array} 
+%% Para imÃ¡genes, tablas y flotantes
+\usepackage{graphicx, float, array}
 
-%% Para matemáticas
-%\usepackage{amsmath, amssymb} 
+%% Para matemÃ¡ticas
+\usepackage{amsmath, amssymb}
 
 %% Parametros para margenes del documento
-\usepackage[right=2.5cm,left=2.5cm,top=2.5cm,bottom=2.5cm,headsep=0cm,footskip=1cm]{geometry} 
-\setlength{\parskip}{\baselineskip} %Espaciado entre cada párrafo
-%\renewcommand{\baselinestretch}{1.5} %Espaciado de línea 1.5 puntos
+%\usepackage[right=2.5cm,left=2.5cm,top=2.5cm,bottom=2.5cm,headsep=0cm,footskip=1cm]{geometry}
+\usepackage[width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+%\setlength{\parskip}{\baselineskip} %Espaciado entre cada pÃ¡rrafo
+\renewcommand{\baselinestretch}{1.5} %Espaciado de lÃ­nea 1.5 puntos
 \usepackage[T1]{fontenc}
 
 %%%------------------------------------------------------------------------
 %%% Tipografia:
 %%%------------------------------------------------------------------------
-%% Se pueden utilizar la siguientes fuentes Helvetica, Droid Sans o Minion Pro
-%% Sólo descomenta o comenta la que te agrade, según sea el caso
+%% Se pueden utilizar la siguientes fuentes Helvetica, Charter, Avante Grade,
+%% Palatino y Verdana
+%% Solo descomenta o comenta la que te agrade, segun sea el caso
 
+
+%% Charter
+%\usepackage{charter} %% Charter
+%\renewcommand{\familydefault}{bch}
+%% Palatino
+\usepackage{palatino} %% Palatino
+\renewcommand{\familydefault}{ppl}
+%% Avant Grade
+%\usepackage{avant} %% Avant Grade
+%\renewcommand{\familydefault}{pag}
 %% Helvetica
-\usepackage{helvet}
-
-%% Droid Sans
-%\usepackage[defaultsans]{droidsans} %% Selección de la tipografía, fuente Droid Sans
-%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be typewriter style
-
-%% Minion Pro
-% Solo si se tiene instalado la fuente Minion Pro de Adobe
-%\usepackage{MinionPro,caption}
+%\usepackage{helvet} %% Helvetica
+%\renewcommand{\familydefault}{phv}
 
 %%%------------------------------------------------------------------------
 %%% Metadatos
@@ -78,15 +83,15 @@
 
 %% Modifica a tus necesidades.
 \author{Nombre Paterno Materno}
-\title{Título de la tarea}
+\title{TÃ­tulo de la tarea}
 %\date{}
 
-%%%------------------------------------------------------------------------  
+%%%------------------------------------------------------------------------
 %%% Registro de versiones con Git
 %%%------------------------------------------------------------------------
 
-%% Si no quieres usar git o el paquete vc (desde CTAN), comenta la línea correspondientes.
-%% Si comentas, debes estar seguro de comentar toda la sección
+%% Si no quieres usar git o el paquete vc (desde CTAN), comenta la linea correspondientes.
+%% Si comentas, debes estar seguro de comentar toda la secciï¿½n
 %\immediate\write18{sh ./vc}
 %\input{vc}
 %\usepackage{scrpage2}
@@ -103,7 +108,7 @@
 \begin{document}
 \maketitle
 
-\section{Introducción}
+\section{IntroducciÃ³n}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta diam et volutpat. Nam mattis facilisis pulvinar. Donec consectetur pulvinar ullamcorper. Aenean ac eleifend dolor. Sed imperdiet enim id ligula tempor, eget hendrerit ex commodo. Etiam dapibus fermentum rutrum. Sed sit amet pulvinar dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In volutpat sem lacus, sit amet scelerisque dui consectetur quis. Nullam luctus elit ac laoreet vulputate. Mauris metus nisl, ultricies in diam eget, faucibus accumsan arcu. Quisque eget blandit nibh, in facilisis quam.
 
 Proin eleifend ex id neque pharetra, sit amet interdum massa lobortis. Phasellus sit amet ullamcorper nisl. Nulla lobortis est vel consectetur molestie. Nunc ac feugiat lacus. Ut velit mi, faucibus in lacinia bibendum, facilisis ac ex. Aliquam congue feugiat fringilla. Nulla nisi metus, dignissim sed ex nec, luctus lacinia sapien. Praesent auctor dapibus ipsum sit amet vulputate. Vestibulum semper tempus laoreet. Donec tempus ligula at nisl ultricies, eget efficitur enim elementum. Nullam aliquet ultrices rutrum. In a massa in nunc auctor interdum eu vel ante. Etiam quam enim, rutrum ut ornare non, efficitur ut ligula. Ut non pellentesque augue.
@@ -119,16 +124,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta
 
 Proin eleifend ex id neque pharetra, sit amet interdum massa lobortis. Phasellus sit amet ullamcorper nisl. Nulla lobortis est vel consectetur molestie. Nunc ac feugiat lacus. Ut velit mi, faucibus in lacinia bibendum, facilisis ac ex. Aliquam congue feugiat fringilla. Nulla nisi metus, dignissim sed ex nec, luctus lacinia sapien. Praesent auctor dapibus ipsum sit amet vulputate. Vestibulum semper tempus laoreet. Donec tempus ligula at nisl ultricies, eget efficitur enim elementum. Nullam aliquet ultrices rutrum. In a massa in nunc auctor interdum eu vel ante. Etiam quam enim, rutrum ut ornare non, efficitur ut ligula. Ut non pellentesque augue.
 
-\subsection{Subsección del tema}
+\subsection{SubsecciÃ³n del tema}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta diam et volutpat. Nam mattis facilisis pulvinar. Donec consectetur pulvinar ullamcorper. Aenean ac eleifend dolor. Sed imperdiet enim id ligula tempor, eget hendrerit ex commodo. Etiam dapibus fermentum rutrum. Sed sit amet pulvinar dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In volutpat sem lacus, sit amet scelerisque dui consectetur quis. Nullam luctus elit ac laoreet vulputate. Mauris metus nisl, ultricies in diam eget, faucibus accumsan arcu \cite{marr2015}. Quisque eget blandit nibh, in facilisis quam.
 
 Proin eleifend ex id neque pharetra, sit amet interdum massa lobortis. Phasellus sit amet ullamcorper nisl. Nulla lobortis est vel consectetur molestie. Nunc ac feugiat lacus. Ut velit mi, faucibus in lacinia bibendum, facilisis ac ex. Aliquam congue feugiat fringilla. Nulla nisi metus, dignissim sed ex nec, luctus lacinia sapien. Praesent auctor dapibus ipsum sit amet vulputate. Vestibulum semper tempus laoreet. Donec tempus ligula at nisl ultricies, eget efficitur enim elementum. Nullam aliquet ultrices rutrum. In a massa in nunc auctor interdum eu vel ante. Etiam quam enim, rutrum ut ornare non, efficitur ut ligula. Ut non pellentesque augue.
 
 In sit amet metus sapien. Donec a massa consequat purus accumsan finibus quis a dui. Aenean mauris elit, bibendum nec est vitae, consequat ultrices ligula. Suspendisse ac accumsan est. Aliquam faucibus nisl vitae lacinia pretium. Proin non vulputate nunc. Nullam quis lacinia lectus, nec bibendum enim. Duis quam magna, rutrum sit amet elit nec, scelerisque finibus nunc.
 
-\section{Otro tema o sección}
-Colocar viñetas:
-\begin{enumerate} % Inicia enumeración
+\section{Otro tema o secciÃ³n}
+Colocar viÃ±etas:
+\begin{enumerate} % Inicia enumeraciï¿½n
  \item \textbf{Punto 1}, In sit amet metus sapien. Donec a massa consequat purus accumsan finibus quis a dui. Aenean mauris elit, bibendum nec est vitae, consequat ultrices ligula.
  \item \textbf{Punto 2}, cIn sit amet metus sapien. Donec a massa consequat purus accumsan finibus quis a dui. Aenean mauris elit, bibendum nec est vitae, consequat ultrices ligula.
  \item \textbf{Punto 3},In sit amet metus sapien. Donec a massa consequat purus accumsan finibus quis a dui. Aenean mauris elit, bibendum nec est vitae, consequat ultrices ligula.
@@ -143,7 +148,7 @@ Colocar viñetas:
 \end{center}
 \end{figure}
 
-\subsection{Subsección del tema}
+\subsection{SubsecciÃ³n del tema}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta diam et volutpat. Nam mattis facilisis pulvinar. Donec consectetur pulvinar ullamcorper. Aenean ac eleifend dolor. Sed imperdiet enim id ligula tempor, eget hendrerit ex commodo. Etiam dapibus fermentum rutrum. Sed sit amet pulvinar dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In volutpat sem lacus, sit amet scelerisque dui consectetur quis. Nullam luctus elit ac laoreet vulputate. Mauris metus nisl, ultricies in diam eget, faucibus accumsan arcu. Quisque eget blandit nibh, in facilisis quam \cite{baraybar2011}.
 
 
@@ -151,16 +156,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula porta diam et volutpat. Nam mattis facilisis pulvinar. Donec consectetur pulvinar ullamcorper. Aenean ac eleifend dolor. Sed imperdiet enim id ligula tempor, eget hendrerit ex commodo. Etiam dapibus fermentum rutrum. Sed sit amet pulvinar dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In volutpat sem lacus, sit amet scelerisque dui consectetur quis. Nullam luctus elit ac laoreet vulputate. Mauris metus nisl, ultricies in diam eget, faucibus accumsan arcu. Quisque eget blandit nibh, in facilisis quam.
 
 
-% Bibliografía.
+% BibliografÃ­a.
 %-----------------------------------------------------------------
-% para agregar más referencias es necesario abrir el archivo : biblio/bibliografia.bib
-% Compilar las referencias desde la línea de comandos o terminal:
+% para agregar mÃ¡s referencias es necesario abrir el archivo : biblio/bibliografia.bib
+% Compilar las referencias desde la lÃ­nea de comandos o terminal:
 % $ latex PaternoMatenoN_plantillatarea
 % $ bibtex PaternoMatenoN_plantillatarea
 % $ latex PaternoMatenoN_plantillatarea
 % $ latex PaternoMatenoN_plantillatarea
 %-----------------------------------------------------------------
+
 \bibliography{biblio/bibliografia.bib}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
 \bibliographystyle{apacite}
+
 
 \end{document}
