@@ -2,7 +2,7 @@
 
 Archivos para elaborar tareas o trabajo sencillos utilizando LATEX, se puede emplear para sistemas MS Windows, GNU/Linux y OSX.
 
-Se debe emplear ls siguiente estructura para la entrega de trajos:
+Se debe emplear la siguiente estructura para la entrega de trajos:
 
 - PaternoMatenoN_plantillatarea
 
@@ -12,7 +12,7 @@ Elemento | Descripción |
 Paterno | Apellido paterno iniciando con la primera letra en mayúscula. |
 Materno | Corresponde al apellido materno iniciando con la primera letra en mayúscula. |
 N | Inicial del primer nombre, sí se tiene dos nombre utilizar las iniciales de cada uno en mayúsculas.
-_ | Guión bajo se empla como separación. |
+_ | Guión bajo se emplea como separación. |
 plantillatarea | Es el nombre de la tarea o unidad solicitada. | 
 
 
